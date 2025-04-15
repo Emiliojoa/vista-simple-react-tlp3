@@ -101,13 +101,31 @@ function App() {
           </>
           ))
           }
-         
-        </div>
-       
+        </div> 
+      </div>
+      <div className="text-center mt-12">
+      <div className="flex justify-center gap-4">
+        <button
+        onClick={handlePrev}
+        disabled={!data?.info?.prev}
+        className="flex items-center justify-center gap-2 px-6 py-3 bg-green-500 text-white rounded-lg disabled:opacity-50 disabled:cursor-not-allowed hover:bg-green-600 transition-all duration-300 hover:-translate-y-1 shadow-lg hover:shadow-green-500/25"
+        >
+          ← Atras
+        </button>
+        <button
+        onClick={handleNext}
+        disabled={!data?.info?.next}
+        className="flex items-center justify-center gap-2 px-6 py-3 bg-green-500 text-white rounded-lg disabled:opacity-50 disabled:cursor-not-allowed hover:bg-green-600 transition-all duration-300 hover:-translate-y-1 shadow-lg hover:shadow-green-500/25"
+        >
+          Siguiente→
+        </button>
+      </div>
       </div>
       
         
-          
+            
+
+
           </div>
     
   );
